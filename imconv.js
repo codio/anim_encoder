@@ -4,7 +4,7 @@
 // Output filename is 'screen_12345678.png' where 12345678 is ms elapsed since (whenever)
 // This is dependent on the fps value below (the frame rate at which we spit out the .png files)
 
-var fps = 4      			// Frame per second 
+var fps = 4    			// Frame per second 
 var frameInc = 1000/fps;	// milliseconds per frame
 
 var fs = require('fs')

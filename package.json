@@ -1,0 +1,14 @@
+{
+  "name": "anim_encoder",
+  "version": "0.0.0",
+  "description": "anim_encoder creates small JavaScript+HTML animations from a series on PNG images. This is a modification of that original post, that adds some actual documentation cleans up the code base a bit and attempts to make it slightly more reliable. So that if anyone actually wants to use this is a project they can get up and running really quickly.",
+  "main": "imconv.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fm",
+  "license": "BSD-2-Clause",
+}

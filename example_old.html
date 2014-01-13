@@ -3,7 +3,6 @@
 
 <head>
 <script type="text/javascript" src="example_anim.js"></script>
-<script type="text/javascript" src="test_anim.js"></script>
 <script type="text/javascript">
 var delay_scale = 0.7
 var timer = null
@@ -35,6 +34,8 @@ var animate = function(img, timeline, element)
 			var dy = blit[5]
 			//ctx.drawImage(img, sx, sy, w, h, dx/2, dy/2, w/2, h/2)
 			ctx.drawImage(img, sx, sy, w, h, dx, dy, w, h)
+
+			//ctx.scale(0.5, 0.5)
 		}
 
 		timer = window.setTimeout(f, delay)
@@ -111,21 +112,15 @@ function set_animation(img_url, timeline, canvas_id, fallback_id)
 
 <body>
 
-<div>
-	<canvas id="anim_target" class="anim_target" width="800" height="450">
-	<div id="anim_fallback" class="anim_target" style="width: 800px; height: 450px; position: relative;"></div>
-	</canvas>
-</div>
-<div>
-	<canvas id="test_target" class="test_target" width="800" height="450">
-	<div id="test_fallback" class="test_target" style="width: 800px; height: 450px; position: relative;"></div>
-	</canvas>
-</div>
+<p>Example Animation. Please ensure you've run anim_encoder.py to generate the required data.
 
+<div><canvas id="anim_target" class="anim_target" width="800" height="450">
+<div id="anim_fallback" class="anim_target" style="width: 800px; height: 450px; position: relative;"></div>
+<p></canvas></div>
+	
 
 <script>
 set_animation("example_packed.png", example_timeline, 'anim_target', 'anim_fallback');
-set_animation("test_packed.png", test_timeline, 'test_target', 'test_fallback');
 </script>
 
 </body>

@@ -3,8 +3,10 @@
 <html>
 
 <head>
-<script type="text/javascript" src="old_example_anim.js"></script>
-<script type="text/javascript" src="command_bar_anim.js"></script>
+<script type="text/javascript" src="panels_anim.js"></script>
+<script type="text/javascript" src="command_anim.js"></script>
+<script type="text/javascript" src="open_anim.js"></script>
+<script type="text/javascript" src="abbreviations_anim.js"></script>
 <script type="text/javascript">
 var delay_scale = 0.7
 
@@ -120,22 +122,37 @@ function set_animation(img_url, timeline, canvas_id, fallback_id)
 
 <body>
 
+
+
 <div>
-	<canvas id="old_example_target" class="old_example_target" width="800" height="450">
-	<div id="old_example_fallback" class="old_example_target" style="width: 800px; height: 450px; position: relative;"></div>
+	<canvas id="command_target" class="command_target" width="800" height="450">
+	<div id="command_fallback" class="command_target" style="width: 800px; height: 450px; position: relative;"></div>
 	</canvas>
 </div>
 
 <div>
-	<canvas id="command_bar_target" class="command_bar_target" width="800" height="450">
-	<div id="command_bar_fallback" class="command_bar_target" style="width: 800px; height: 450px; position: relative;"></div>
+	<canvas id="open_target" class="open_target" width="800" height="450">
+	<div id="open_fallback" class="open_target" style="width: 800px; height: 450px; position: relative;"></div>
 	</canvas>
 </div>
 
+<div>
+	<canvas id="panels_target" class="panels_target" width="800" height="450">
+	<div id="panels_fallback" class="panels_target" style="width: 800px; height: 450px; position: relative;"></div>
+	</canvas>
+</div>
+
+<div>
+	<canvas id="abbreviations_target" class="abbreviations_target" width="800" height="450">
+	<div id="abbreviations_fallback" class="abbreviations_target" style="width: 800px; height: 450px; position: relative;"></div>
+	</canvas>
+</div>
 
 <script>
-set_animation("old_example_packed.png", old_example_timeline, 'old_example_target', 'old_example_fallback');
-set_animation("command_bar_packed.png", command_bar_timeline, 'command_bar_target', 'command_bar_fallback');
+	set_animation("panels_packed.png", panels_timeline, 'panels_target', 'panels_fallback');
+	set_animation("command_packed.png", command_timeline, 'command_target', 'command_fallback');
+	set_animation("abbreviations_packed.png", abbreviations_timeline, 'abbreviations_target', 'abbreviations_fallback');
+	set_animation("open_packed.png", open_timeline, 'open_target', 'abbreviation_fallback');
 </script>
 
 </body>

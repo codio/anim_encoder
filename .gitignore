@@ -1,6 +1,6 @@
 *.pyc
 *.tmp
-abbreviations
-command
-oopen
-panels
+abbreviations/
+command/
+open/
+panels/

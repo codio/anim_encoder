@@ -7,6 +7,8 @@
 <script type="text/javascript" src="command_anim.js"></script>
 <script type="text/javascript" src="open_anim.js"></script>
 <script type="text/javascript" src="abbreviations_anim.js"></script>
+<script type="text/javascript" src="shortcuts_anim.js"></script>
+
 <script type="text/javascript">
 var delay_scale = 0.7
 
@@ -148,11 +150,19 @@ function set_animation(img_url, timeline, canvas_id, fallback_id)
 	</canvas>
 </div>
 
+<div>
+	<canvas id="shortcuts_target" class="shortcuts_target" width="854" height="479">
+	<div id="shortcuts_fallback" class="shortcuts_target" style="width: 854px; height: 479px; position: relative;"></div>
+	</canvas>
+</div>
+
 <script>
 	set_animation("panels_packed.png", panels_timeline, 'panels_target', 'panels_fallback');
 	set_animation("command_packed.png", command_timeline, 'command_target', 'command_fallback');
 	set_animation("abbreviations_packed.png", abbreviations_timeline, 'abbreviations_target', 'abbreviations_fallback');
 	set_animation("open_packed.png", open_timeline, 'open_target', 'abbreviation_fallback');
+	set_animation("shortcuts_packed.png", shortcuts_timeline, 'shortcuts_target', 'shortcuts_fallback');
+
 </script>
 
 </body>

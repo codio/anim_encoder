@@ -1,6 +1,6 @@
-*.pyc
-*.tmp
 abbreviations
 command
 open
 panels
+*.pyc
+*.tmp

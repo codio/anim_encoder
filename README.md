@@ -1,3 +1,4 @@
+
 # Animation Encoder
 ## Overview
 anim_encoder creates small JavaScript+HTML animations from a series on PNG images.
